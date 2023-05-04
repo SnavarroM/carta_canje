@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block content %}
+<div class="px-4 py-5 my-5 text-center">
+  <img class="d-block mx-auto mb-4" src="{% static 'cena2.png' %}" alt="" width="216" height="171">
+  <h1 class="display-5 fw-bold text-body-emphasis">Carta de canje</h1>
+  <form method="get">
+    <label for="nombre">Nombre del archivo:</label>
+    <input type="text" name="nombre" id="nombre">
+    <button type="submit">Buscar</button>
+  </form>
+
+
+
+  <div class="col-lg-6 mx-auto">
+    {% if archivos %}
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>Link Cartas de Canje</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for archivo in archivos %}
+        <tr>
+          <td><a href="{% url 'detalle_archivo' archivo_id=archivo.id %}" target="_blank">{{ archivo.nombre }}</a></td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+
+
+    {% else %}
+    <p>No se encontraron archivos.</p>
+    {% endif %}
+
+
+
+
+
+  </div>
+  {% endblock content %}

@@ -1,0 +1,25 @@
+actua como un desarrollador de django y crea una aplicacion con un modelo archivo con los campos
+nombre como charfield y archivo como filefield donde se guardaran el nombre del archivo y su url
+en la carpeta upload_to='archivos/ donde guardare los archivos. una vez creda la aplicacion crea un archivo html 
+donde pueda buscar estos archivos a traves de su nombre
+
+actua como desarrollador de django y crea un crud y un buscador de archivos guardados en la base de datos el modelo
+se llama archivo y tiene solo 2 campos nombre que es de tipo CharField y archivo que es de tipo FileField
+
+
+actua como desarrollador de django y crea codigo que sea un buscardor basado en vista basada en clases con django,
+agregale paginate_by = 1, y muestralo en forma de tabla, 
+el modelo se llama Archivo y tiene 2 campos nombre y archivo el contenido debe estar centrado con bootstrap
+
+actua como desarrollador de django y crea codigo que sea un detailview basado en vista basada en clases con django,
+agregale y que pueda mostralo en archivo_detail.html,el modelo se llama Archivo y tiene 2 campos nombre 
+
+
+actua como desarrollador de django y crea codigo donde pueda mostrar archivos .pdf guardados en una carpeta lamada pdf
+y que tiene la url guardada en el modelo Archivo en el campo archivo, y que al clikear un link en archiv_list.html
+lo muestre
+
+actua como desarrollar de django y crea un codigo donde aplique slug con los siguientes campos archivo de tipo CharField,
+el campo archivo de tipo FileField y el campo slug y el modelo se llama Archivo
+
+para que sirve el slug en django dame un ejemplo
